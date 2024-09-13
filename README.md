@@ -1,6 +1,10 @@
+
 # Ron_Way
 
-`Ron_Way` is a command-line tool designed to convert Alacritty terminal themes in TOML format to Cosmic Terminal themes in RON format. This is my first Rust project and I hope it helps others, even if it's janky as hell.
+[![crates.io](https://img.shields.io/crates/v/ron_way.svg)](https://crates.io/crates/ron_way)
+[![Documentation](https://docs.rs/ron_way/badge.svg)](https://docs.rs/ron_way)
+
+`Ron_Way` is a command-line tool designed to convert Alacritty terminal themes in TOML format to Cosmic Terminal themes in RON format. This is my first Rust project, and I hope it helps others, even if it's a bit janky.
 
 ## Features
 
@@ -9,7 +13,14 @@
 
 ## Installation
 
-To install `Ron_Way`, clone this repository and build the project using Cargo.
+Add this to your `Cargo.toml`:
+
+```toml
+[dependencies]
+ron_way = "0.1.0"
+```
+
+To install `Ron_Way`, clone this repository and build the project using Cargo:
 
 ```bash
 git clone https://github.com/SloKart/Ron_Way.git
@@ -25,24 +36,38 @@ cargo build --release
 
 ## Usage
 
-Once installed, you can use `Ron_Way` from the command line to convert your theme files.
+### Command Line
+
+Once installed, you can use `ron_way` from the command line to convert your theme files:
 
 ```bash
-Ron_Way <input.toml> <output.ron>
+ron_way <input.toml> <output.ron>
 ```
 
-### Arguments
+#### Arguments
 
 - `<input.toml>`: Path to the input TOML file containing the Alacritty theme.
 - `<output.ron>`: Path to the output RON file where the converted Cosmic Terminal theme will be saved.
 
-### Example
+#### Example
 
 ```bash
-Ron_Way ~/Downloads/gruvbox_light.toml ~/Downloads/gruvbox_light.ron
+ron_way ~/Downloads/gruvbox_light.toml ~/Downloads/gruvbox_light.ron
 ```
 
 This command will read the `gruvbox_light.toml` file from the `Downloads` directory and output the converted RON file as `gruvbox_light.ron` in the same directory.
+
+### As a Library
+
+You can also use `Ron_Way` as a dependency in your Rust projects. Here’s an example of how to use it:
+
+```rust
+use ron_way;
+
+fn main() {
+    // Example code here
+}
+```
 
 ## Configuration
 
@@ -55,7 +80,5 @@ Feel free to open issues or submit pull requests if you have suggestions for imp
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
 
-.
-
----
