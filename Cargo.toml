@@ -1,16 +1,21 @@
 [package]
-name = "Ron_Way"
+name = "ron_way"
 version = "0.1.0"
+authors = ["Jason Lang <jason.allen.lang@gmail.com"]
 edition = "2021"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 serde_derive = "1.0"
 serde_json = "1.0"
-toml = "0.5"
 ron = "0.7"
-regex = "1"
+regex = "1.5"
+toml = "0.5"
+
+[lib]
+name = "ron_way"
+path = "src/lib.rs"
 
 [[bin]]
-name = "Ron_Way"
+name = "ron_way_cli"
 path = "src/main.rs"
