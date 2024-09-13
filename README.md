@@ -1,9 +1,6 @@
-
-
-```markdown
 # Ron_Way
 
-`Ron_Way` is a command-line tool designed to convert Alacritty terminal themes in TOML format to Cosmic Terminal themes in RON format. This is my first Rust project and I hope it helps others, even if it is janky as hell. 
+`Ron_Way` is a command-line tool designed to convert Alacritty terminal themes in TOML format to Cosmic Terminal themes in RON format. This is my first Rust project and I hope it helps others, even if it's janky as hell.
 
 ## Features
 
@@ -12,7 +9,7 @@
 
 ## Installation
 
-To install `Ron_Way`, clone this repository and build the project using Cargo:
+To install `Ron_Way`, clone this repository and build the project using Cargo.
 
 ```bash
 git clone https://github.com/yourusername/Ron_Way.git
@@ -28,7 +25,7 @@ cargo build --release
 
 ## Usage
 
-Once installed, you can use `Ron_Way` from the command line to convert your theme files:
+Once installed, you can use `Ron_Way` from the command line to convert your theme files.
 
 ```bash
 Ron_Way <input.toml> <output.ron>
@@ -59,6 +56,6 @@ Feel free to open issues or submit pull requests if you have suggestions for imp
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+.
 
-```
-
+---
