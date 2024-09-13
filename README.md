@@ -12,7 +12,7 @@
 To install `Ron_Way`, clone this repository and build the project using Cargo.
 
 ```bash
-git clone https://github.com/yourusername/Ron_Way.git
+git clone https://github.com/SloKart/Ron_Way.git
 cd Ron_Way
 cargo install --path .
 ```
