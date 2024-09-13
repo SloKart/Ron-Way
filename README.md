@@ -1,2 +1,2 @@
 # Ron-Way (in progress)
-converts Alacritty themes to Cosmic themes. 
+converts Alacritty themes to Cosmic Terminal themes. 
